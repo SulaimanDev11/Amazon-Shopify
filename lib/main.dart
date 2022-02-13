@@ -10,7 +10,7 @@ void main() {
     ScreenUtilInit(
       designSize: Size(360, 690),
       builder: () => GetMaterialApp(
-        title: "Trod App",
+        title: "Jarett Wesley Automation",
         initialRoute: AppPages.INITIAL,
         getPages: AppPages.routes,
       ),

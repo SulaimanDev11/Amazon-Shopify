@@ -16,7 +16,7 @@ class AddButton extends StatelessWidget {
             EdgeInsets.symmetric(vertical: 5.h, horizontal: Get.width * 0.25),
         padding: EdgeInsets.symmetric(vertical: 10.h, horizontal: 15.h),
         decoration: BoxDecoration(
-            color: Colors.orange, borderRadius: BorderRadius.circular(3.r)),
+            color: Color(0xffEB6134), borderRadius: BorderRadius.circular(3.r)),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [

@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.bitscharm.amazone_shopify">
    <application
-        android:label="amazone_shopify"
+        android:label="Jarett Wesley Automation"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

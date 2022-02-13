@@ -25,7 +25,7 @@ class CustomCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
                 Checkbox(
-                  activeColor: Colors.orange,
+                  activeColor: Color(0xffEB6134),
                   value: false,
                   onChanged: (value) {},
                 ),
@@ -43,11 +43,11 @@ class CustomCard extends StatelessWidget {
                         onTap: () {},
                         child: Text(
                           'View Store',
-                          style: TextStyle(color: Colors.orange),
+                          style: TextStyle(color: Color(0xffEB6134)),
                         ),
                       ),
                       SizedBox(width: Get.width * 0.03),
-                      Icon(Icons.remove_red_eye, color: Colors.orange)
+                      Icon(Icons.remove_red_eye, color: Color(0xffEB6134))
                     ],
                   ),
                 ),
@@ -85,7 +85,7 @@ class CustomCard extends StatelessWidget {
                 Text('Actions'),
                 Icon(
                   Icons.arrow_drop_down_circle_rounded,
-                  color: Colors.orange,
+                  color: Color(0xffEB6134),
                 )
               ],
             ),

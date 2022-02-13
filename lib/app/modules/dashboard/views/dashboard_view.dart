@@ -22,13 +22,10 @@ class DashboardView extends GetView<DashboardController> {
                 Container(
                   height: Get.height * 0.2,
                   width: Get.width,
-                  child: Center(
-                    child: Image(
-                      image: AssetImage('assets/images/logo.png'),
-                      height: Get.height * 0.2,
-                      // width: ,
-                    ),
-                  ),
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          fit: BoxFit.cover,
+                          image: AssetImage('assets/images/logo.jpg'))),
                 ),
                 Container(
                   height: Get.height - Get.height * 0.26,
@@ -40,55 +37,46 @@ class DashboardView extends GetView<DashboardController> {
                           Category(
                               icon: Icons.attach_money,
                               title: 'SALES',
+                              color: 0xffF8D8CE,
                               onTap: () {}),
                           SizedBox(width: 5.w),
                           Category(
                               icon: Icons.shopping_bag,
                               title: 'STORES',
-                              onTap: () {}),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          Category(
-                              icon: Icons.group, title: 'USERS', onTap: () {}),
-                          SizedBox(width: 5.w),
-                          Category(
-                              icon: Icons.payment,
-                              title: 'PAYMENTS',
-                              onTap: () {}),
+                              color: 0xff232121,
+                              onTap: () {
+                                Get.toNamed(Routes.SHOPPING_SCREEN);
+                              }),
                         ],
                       ),
                       Row(
                         children: [
                           Category(
                               icon: Icons.group,
-                              title: 'REFERRALS',
+                              color: 0xff232121,
+                              title: 'USERS',
                               onTap: () {}),
                           SizedBox(width: 5.w),
                           Category(
                               icon: Icons.attach_money,
                               title: 'INVOICES',
+                              color: 0xffF8D8CE,
                               onTap: () {}),
                         ],
                       ),
                       Row(
                         children: [
                           Category(
-                              icon: Icons.email, title: 'EMAIL', onTap: () {}),
+                              icon: Icons.email,
+                              title: 'EMAIL',
+                              color: 0xffF8D8CE,
+                              onTap: () {}),
                           SizedBox(width: 5.w),
                           Category(
-                              icon: Icons.chat, title: 'CHAT', onTap: () {}),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          Category(
-                              icon: Icons.all_inclusive_outlined,
-                              title: 'CUSTOMER SERVICE',
-                              onTap: () {
-                                Get.toNamed(Routes.SHOPPING_SCREEN);
-                              }),
+                              icon: Icons.chat,
+                              title: 'CHAT US',
+                              color: 0xff232121,
+                              onTap: () {}),
                         ],
                       ),
                     ],

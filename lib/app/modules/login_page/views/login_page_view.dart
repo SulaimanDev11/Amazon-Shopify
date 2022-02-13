@@ -23,7 +23,6 @@ class LoginPageView extends GetView<LoginPageController> {
                     height: Get.height * 0.2,
                     width: Get.width,
                     decoration: BoxDecoration(
-                        color: Colors.red,
                         borderRadius: BorderRadius.circular(20.sp),
                         image: DecorationImage(
                             fit: BoxFit.cover,
@@ -36,7 +35,7 @@ class LoginPageView extends GetView<LoginPageController> {
                         TextStyle(fontWeight: FontWeight.w900, fontSize: 18.sp),
                   ),
                   SizedBox(height: Get.height * 0.02),
-                  Text('Sign to continue to TR'),
+                  Text('Sign to continue to Jarett Wesley Automation'),
                 ],
               ),
             ),
@@ -48,7 +47,7 @@ class LoginPageView extends GetView<LoginPageController> {
                     decoration: InputDecoration(
                       icon: Icon(
                         Icons.person,
-                        color: Colors.orange,
+                        color: Color(0xffEB6134),
                         size: Get.height * 0.035,
                       ),
                       filled: true,
@@ -66,12 +65,12 @@ class LoginPageView extends GetView<LoginPageController> {
                     decoration: InputDecoration(
                       suffixIcon: Icon(
                         Icons.remove_red_eye,
-                        color: Colors.orange,
+                        color: Color(0xffEB6134),
                         size: Get.height * 0.03,
                       ),
                       icon: Icon(
                         Icons.vpn_key,
-                        color: Colors.orange,
+                        color: Color(0xffEB6134),
                         size: Get.height * 0.035,
                       ),
                       filled: true,
@@ -116,6 +115,19 @@ class LoginPageView extends GetView<LoginPageController> {
                 ),
               ),
             ),
+            GestureDetector(
+                onTap: () {},
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text('Don\'t have an account '),
+                    Text(
+                      'Click Here',
+                      style: TextStyle(
+                          color: Colors.blue[900], fontWeight: FontWeight.bold),
+                    )
+                  ],
+                )),
             GestureDetector(
               onTap: () {},
               child: Text('Forgot your password'),

@@ -8,9 +8,9 @@ import 'widgets/custom_button.dart';
 import 'widgets/custom_card.dart';
 
 class ShoppingScreenView extends GetView<ShoppingScreenController> {
-  Rx<int> _selectedIndex = 0.obs;
-  void _onItemTapped(int index) {
-    _selectedIndex.value = index;
+  Rx<int> selectedIndex = 0.obs;
+  void onItemTapped(int index) {
+    selectedIndex.value = index;
   }
 
   @override
@@ -77,7 +77,7 @@ class ShoppingScreenView extends GetView<ShoppingScreenController> {
                         Row(
                           children: [
                             Switch(
-                              activeColor: Colors.orange,
+                              activeColor: Color(0xffEB6134),
                               value: true,
                               onChanged: (value) {},
                             ),
@@ -87,14 +87,14 @@ class ShoppingScreenView extends GetView<ShoppingScreenController> {
                         Row(
                           children: [
                             Checkbox(
-                              activeColor: Colors.orange,
+                              activeColor: Color(0xffEB6134),
                               value: false,
                               onChanged: (value) {},
                             ),
                             Expanded(
                               child: DropdownButton<String>(
                                 isExpanded: true,
-                                iconEnabledColor: Colors.orange,
+                                iconEnabledColor: Color(0xffEB6134),
                                 items: <String>[
                                   'item A',
                                   'item B',
@@ -157,11 +157,11 @@ class ShoppingScreenView extends GetView<ShoppingScreenController> {
                 label: '',
               ),
             ],
-            selectedItemColor: Colors.orange,
+            selectedItemColor: Color(0xffEB6134),
             unselectedItemColor: Colors.grey,
-            currentIndex: _selectedIndex.value,
+            currentIndex: selectedIndex.value,
             onTap: (int index) {
-              _selectedIndex.value = index;
+              selectedIndex.value = index;
             },
           ),
         ));
