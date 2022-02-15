@@ -87,9 +87,35 @@ class LoginPageView extends GetView<LoginPageController> {
               ),
             ),
             Container(
-              height: Get.height * 0.15,
+              margin: EdgeInsets.symmetric(horizontal: 30.w),
+              padding: EdgeInsets.symmetric(horizontal: 8.w),
+              height: Get.height * 0.12,
               width: Get.width,
-              color: Colors.green,
+              decoration: BoxDecoration(
+                  color: Colors.grey[100],
+                  border: Border.all(color: Colors.grey)),
+              child: Row(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(right: 8.w),
+                    height: Get.height * 0.04,
+                    width: Get.height * 0.04,
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(color: Colors.grey)),
+                  ),
+                  Text('I\'m not a robot'),
+                  Expanded(
+                      child: Container(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Image(image: AssetImage('assets/images/reCaptcha.png'))
+                      ],
+                    ),
+                  ))
+                ],
+              ),
             ),
             GestureDetector(
               onTap: () {

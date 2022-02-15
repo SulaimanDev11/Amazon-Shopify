@@ -1,3 +1,4 @@
+import 'package:amazone_shopify/app/modules/sales/views/widgets/widgets_fun.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
@@ -6,6 +7,8 @@ import 'package:get/get.dart';
 import '../controllers/sales_controller.dart';
 
 class SalesView extends GetView<SalesController> {
+  ReusableFunction funObject = ReusableFunction();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,9 +70,24 @@ class SalesView extends GetView<SalesController> {
                 ],
               ),
             ),
-            CusButton(title: 'Email', color: 0xffF8D8CE, onTap: () {}),
-            CusButton(title: 'Chat Us', color: 0xff232121, onTap: () {}),
-            CusButton(title: 'Invoice', color: 0xffF8D8CE, onTap: () {}),
+            CusButton(
+                title: 'Email',
+                color: 0xffF8D8CE,
+                onTap: () {
+                  funObject.showEmailDialog();
+                }),
+            CusButton(
+                title: 'Chat Us',
+                color: 0xff232121,
+                onTap: () {
+                  funObject.showChatDialog();
+                }),
+            CusButton(
+                title: 'Invoice',
+                color: 0xffF8D8CE,
+                onTap: () {
+                  funObject.showInvoiceDialog();
+                }),
           ],
         ),
       ),
@@ -91,7 +109,7 @@ class CusButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: GestureDetector(
-        onTap: () {},
+        onTap: onTap,
         child: Container(
           margin: EdgeInsets.symmetric(horizontal: 0.w, vertical: 6.h),
           width: Get.width,
