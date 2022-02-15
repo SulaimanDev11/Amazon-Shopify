@@ -4,10 +4,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:get/get.dart';
 
-import '../controllers/dashboard_controller.dart';
-import 'widgets/category.dart';
+import '../controllers/stores_controller.dart';
+import 'widgets/stores_card.dart';
 
-class DashboardView extends GetView<DashboardController> {
+class StoresView extends GetView<StoresController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,50 +32,33 @@ class DashboardView extends GetView<DashboardController> {
                     children: [
                       Row(
                         children: [
-                          Category(
-                              icon: Icons.attach_money,
-                              title: 'SALES',
+                          StoreCard(
+                              image: 'assets/images/amazon.png',
+                              title: 'Jarett Amazon',
                               color: 0xffF8D8CE,
-                              onTap: () {}),
-                          SizedBox(width: 5.w),
-                          Category(
-                              icon: Icons.shopping_bag,
-                              title: 'STORES',
-                              color: 0xff232121,
                               onTap: () {
-                                Get.toNamed(Routes.STORES);
-                              }),
-                        ],
-                      ),
-                      Row(
-                        children: [
-                          Category(
-                              icon: Icons.group,
-                              color: 0xff232121,
-                              title: 'USERS',
-                              onTap: () {
-                                Get.toNamed(Routes.SHOPPING_SCREEN);
+                                Get.toNamed(Routes.SALES);
                               }),
                           SizedBox(width: 5.w),
-                          Category(
-                              icon: Icons.attach_money,
-                              title: 'INVOICES',
-                              color: 0xffF8D8CE,
+                          StoreCard(
+                              image: 'assets/images/walmart.png',
+                              title: 'Jarett Walmart',
+                              color: 0xff232121,
                               onTap: () {}),
                         ],
                       ),
                       Row(
                         children: [
-                          Category(
-                              icon: Icons.email,
-                              title: 'EMAIL',
-                              color: 0xffF8D8CE,
+                          StoreCard(
+                              image: 'assets/images/ebay.png',
+                              color: 0xff232121,
+                              title: 'Jarett Ebay',
                               onTap: () {}),
                           SizedBox(width: 5.w),
-                          Category(
-                              icon: Icons.chat,
-                              title: 'CHAT US',
-                              color: 0xff232121,
+                          StoreCard(
+                              image: 'assets/images/watch.png',
+                              title: 'Jarett Watches',
+                              color: 0xffF8D8CE,
                               onTap: () {}),
                         ],
                       ),
