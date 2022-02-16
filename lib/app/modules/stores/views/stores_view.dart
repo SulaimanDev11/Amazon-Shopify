@@ -44,7 +44,9 @@ class StoresView extends GetView<StoresController> {
                               image: 'assets/images/walmart.png',
                               title: 'Jarett Walmart',
                               color: 0xff232121,
-                              onTap: () {}),
+                              onTap: () {
+                                Get.toNamed(Routes.SALES);
+                              }),
                         ],
                       ),
                       Row(
@@ -53,13 +55,17 @@ class StoresView extends GetView<StoresController> {
                               image: 'assets/images/ebay.png',
                               color: 0xff232121,
                               title: 'Jarett Ebay',
-                              onTap: () {}),
+                              onTap: () {
+                                Get.toNamed(Routes.SALES);
+                              }),
                           SizedBox(width: 5.w),
                           StoreCard(
                               image: 'assets/images/watch.png',
-                              title: 'Jarett Watches',
+                              title: 'FB Marketplace',
                               color: 0xffF8D8CE,
-                              onTap: () {}),
+                              onTap: () {
+                                Get.toNamed(Routes.SALES);
+                              }),
                         ],
                       ),
                     ],
