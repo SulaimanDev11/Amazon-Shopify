@@ -41,31 +41,34 @@ class StoresView extends GetView<StoresController> {
                               }),
                           SizedBox(width: 5.w),
                           StoreCard(
-                              image: 'assets/images/walmart.png',
-                              title: 'Jarett Walmart',
-                              color: 0xff232121,
-                              onTap: () {
-                                Get.toNamed(Routes.SALES);
-                              }),
+                            image: 'assets/images/walmart.png',
+                            title: 'Jarett Walmart',
+                            color: 0xff232121,
+                            onTap: () {
+                              Get.toNamed(Routes.SALES);
+                            },
+                          ),
                         ],
                       ),
                       Row(
                         children: [
                           StoreCard(
-                              image: 'assets/images/ebay.png',
-                              color: 0xff232121,
-                              title: 'Jarett Ebay',
-                              onTap: () {
-                                Get.toNamed(Routes.SALES);
-                              }),
+                            image: 'assets/images/ebay.png',
+                            color: 0xff232121,
+                            title: 'Jarett Ebay',
+                            onTap: () {
+                              Get.toNamed(Routes.SALES);
+                            },
+                          ),
                           SizedBox(width: 5.w),
                           StoreCard(
-                              image: 'assets/images/watch.png',
-                              title: 'FB Marketplace',
-                              color: 0xffF8D8CE,
-                              onTap: () {
-                                Get.toNamed(Routes.SALES);
-                              }),
+                            image: 'assets/images/watch.png',
+                            title: 'FB Marketplace',
+                            color: 0xffF8D8CE,
+                            onTap: () {
+                              Get.toNamed(Routes.SALES);
+                            },
+                          ),
                         ],
                       ),
                     ],
