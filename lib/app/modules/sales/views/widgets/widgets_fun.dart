@@ -57,18 +57,18 @@ class ReusableFunction {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      'Amazon:',
+                      'Jarett Automation:',
                       style: TextStyle(
                           fontSize: 15.sp, fontWeight: FontWeight.w900),
                     ),
-                    Text('Payout of \$1200 has been transferred'),
+                    Text('The charges for the month of january are \$150'),
                     SizedBox(height: Get.height * 0.02),
                     Text(
-                      'Ebay:',
+                      'Jarett Automation:',
                       style: TextStyle(
                           fontSize: 15.sp, fontWeight: FontWeight.w900),
                     ),
-                    Text('Your payout \$1000 is on its way'),
+                    Text('The charges for the month of january are \$150'),
                   ],
                 )
               ],
