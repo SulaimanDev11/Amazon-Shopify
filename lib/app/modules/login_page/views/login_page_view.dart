@@ -25,8 +25,8 @@ class LoginPageView extends GetView<LoginPageController> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20.sp),
                         image: DecorationImage(
-                            fit: BoxFit.cover,
-                            image: AssetImage('assets/images/header.jpg'))),
+                            fit: BoxFit.fill,
+                            image: AssetImage('assets/images/banner2.png'))),
                   ),
                   SizedBox(height: Get.height * 0.03),
                   Text(

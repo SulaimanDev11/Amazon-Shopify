@@ -62,7 +62,7 @@ class StoresView extends GetView<StoresController> {
                           ),
                           SizedBox(width: 5.w),
                           StoreCard(
-                            image: 'assets/images/watch.png',
+                            image: 'assets/images/fb.png',
                             title: 'FB Marketplace',
                             color: 0xffF8D8CE,
                             onTap: () {
