@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-
 import 'package:get/get.dart';
-
 import '../controllers/shopping_screen_controller.dart';
 import 'widgets/custom_button.dart';
 import 'widgets/custom_card.dart';
